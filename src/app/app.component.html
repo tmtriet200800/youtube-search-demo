@@ -1,0 +1,4 @@
+<app-search-box (loading)="loading = $event" (results)="results = $event"></app-search-box>
+<div>{{ loading }}</div>
+<div>{{ results }}</div>
+<app-search-result *ngFor="let result of results" [result]="result"></app-search-result>
